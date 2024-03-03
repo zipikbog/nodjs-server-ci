@@ -6,5 +6,6 @@ WORKDIR /app
 RUN npm install express
 
 COPY ./node_apply .
+EXPOSE 2021
 
 CMD node server.js
