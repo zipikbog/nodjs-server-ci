@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          images: zipik/nodjs-server
+          images: zipik/nodjs_server
       
       - name: Docker meta
         id: meta
