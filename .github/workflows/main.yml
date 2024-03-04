@@ -42,4 +42,4 @@ jobs:
       - name: deploy
         run: |
           echo "${{ steps.meta.outputs.tags }}"
-          echo "${{tag}}"
+          echo "${{ tag }}"
