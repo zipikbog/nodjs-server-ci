@@ -41,4 +41,5 @@ jobs:
           
       - name: deploy
         run: |
+          docker rm -f $(docker ps -aq)
           docker compose -f app.yml up -d
