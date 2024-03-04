@@ -42,4 +42,5 @@ jobs:
       - name: deploy
         run: |
           echo "${{ steps.meta.outputs.tags }}"
-          echo "${{ tag }}"
+          echo "${{ github.event_name != 'pull_request' }}"
+          echo "${{ steps.meta.outputs.labels }}"
