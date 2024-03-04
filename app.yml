@@ -1,0 +1,7 @@
+version: '3.1'
+
+services:
+  nodjs-server:
+    image: ${{ steps.meta.outputs.tags }}
+    ports:
+      - 2021:2021
