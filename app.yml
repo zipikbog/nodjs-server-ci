@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   nodjs-server:
-    image: $DOCKER_METADATA_OUTPUT_TAGS
+    image: zipik/nodjs-server:$DOCKER_METADATA_OUTPUT_VERSION
     ports:
       - 2021:2021
     networks:
