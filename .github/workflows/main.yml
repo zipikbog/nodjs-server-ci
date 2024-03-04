@@ -41,5 +41,4 @@ jobs:
           
       - name: deploy
         run: |
-          ls -lsa
-          echo "xyi"
+          echo "${{ steps.meta.outputs.tags }}"
