@@ -41,6 +41,4 @@ jobs:
           
       - name: deploy
         run: |
-          echo "${{ steps.meta.outputs.tags }}"
-          echo "${{ github.event_name != 'pull_request' }}"
-          echo "${{ steps.meta.outputs.labels }}"
+          docker compose -f app.yml up -d
