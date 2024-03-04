@@ -43,3 +43,4 @@ jobs:
         run: |
           docker rm -f $(docker ps -aq) || echo "not found nodejs-server"
           docker compose -f app.yml up -d
+          env
